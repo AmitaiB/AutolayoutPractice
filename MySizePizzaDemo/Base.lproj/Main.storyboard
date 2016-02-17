@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -92,6 +93,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qgR-2U-10y" secondAttribute="bottom" constant="10" id="clt-Yl-eNy"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qgR-2U-10y" secondAttribute="bottom" constant="20" id="gNx-I6-XbZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mD2-hi-nHi" secondAttribute="trailing" id="hPg-lx-iPd"/>
+                            <constraint firstItem="K89-QR-EZZ" firstAttribute="width" secondItem="hlh-GH-e1T" secondAttribute="width" multiplier="2/3" id="hzw-Tm-ijd"/>
                             <constraint firstItem="mD2-hi-nHi" firstAttribute="top" secondItem="K89-QR-EZZ" secondAttribute="bottom" constant="10" id="jhI-JB-yDp"/>
                             <constraint firstItem="qgR-2U-10y" firstAttribute="height" secondItem="K89-QR-EZZ" secondAttribute="height" id="kwX-mf-9XL"/>
                             <constraint firstItem="hlh-GH-e1T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mlc-v7-nnK"/>
@@ -109,6 +111,7 @@
                             <mask key="constraints">
                                 <exclude reference="qfe-nq-aqh"/>
                                 <exclude reference="U0m-m7-lbx"/>
+                                <exclude reference="hzw-Tm-ijd"/>
                                 <exclude reference="4Hv-Pz-1ol"/>
                                 <exclude reference="Bfg-La-jpn"/>
                                 <exclude reference="JGv-q1-3Qh"/>
@@ -129,9 +132,10 @@
                             <mask key="constraints">
                                 <exclude reference="6rV-hC-IFb"/>
                                 <exclude reference="FLM-4I-7L2"/>
+                                <include reference="hzw-Tm-ijd"/>
                                 <exclude reference="nFr-I7-oYi"/>
                                 <include reference="4Hv-Pz-1ol"/>
-                                <include reference="JGv-q1-3Qh"/>
+                                <exclude reference="JGv-q1-3Qh"/>
                                 <exclude reference="Nq3-qr-w0T"/>
                                 <include reference="Oei-vr-QMu"/>
                                 <exclude reference="hPg-lx-iPd"/>
